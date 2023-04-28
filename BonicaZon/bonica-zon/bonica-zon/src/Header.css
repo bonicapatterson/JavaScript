@@ -1,0 +1,70 @@
+.header {
+  background-color: #131921;
+  display: flex; /* sets display as in-line item */
+  align-items: center; /* centers the header area */
+  position: sticky; /* allows the nav bar to stick to the top of the screen even when scrolling */
+  top: 0; /* we position it at the top */
+  z-index: 100; /* add z-index to prevent anything else from taking priority */
+}
+
+.header__logo {
+  width: 100px; /* uses the actual size of the logo */
+  object-fit: contain; /* with this command, we say no matter what, stay like this */
+  margin-left: 20px; /*the left margin space*/
+  margin-right: 20px; /*the right margin space*/
+  margin-top: 18px; /*add a margin top to put some spacing between the top & logo*/
+}
+
+.header__optionBasket {
+  display: flex; /* sets display as in-line item */
+  align-items: center; /* centers the header area */
+}
+
+.header__basketCount {
+  margin-left: 10px; /* the left margin space */
+  margin-right: 10px; /* the right margin space */
+}
+
+.header__nav {
+  display: flex; /* corrects alignment since its aligned to the center */
+  justify-content: space-evenly; /* helps each link be spaced out evenly  */
+}
+
+.header__option {
+  display: flex; /* provides a box around the links of the header */
+  flex-direction: column; /*creates columns of the items in the header option because each link is a <span> tag */
+  margin-left: 10px; /* add a little margin to the left to prevent touching */
+  margin-right: 10px; /* add a little margin to the right to prevent touching */
+}
+
+.header__optionLineOne {
+  font-size: 10px; /* give the font a size of 10px */
+}
+
+.header__optionLineTwo {
+  font-size: 13px; /* give the font a size of 13px which is slightly bigger */
+  font-weight: 800; /* the level of boldness (it goes up every 200px) */
+}
+
+.header__link {
+  color: white; /* makes the color of the links white */
+  text-decoration: none; /* we're adding no text decoration */
+}
+
+.header__search {
+  display: flex; /* since all header items are aligned to center, the flex display corrects alignment perfectly */
+  flex: 1; /* tells header__search to take #1 priority */
+}
+
+.header__searchInput {
+  height: 12px; /* to ensure the search box and icon line up */
+  padding: 6px; /* To make the search box and icon line up perfectly  */
+  border: none; /*the site has no border */
+  width: 100%; /* We want the width to take up as much space as possible */
+}
+
+.header__searchIcon {
+  padding: 5px; /* we only need about 5px of padding */
+  height: 22px !important; /* we add 22px of height and "!important" is telling material UI to ignore their setup and do what we tell it */
+  background-color: #cd9042; /* the color of the button that we want */
+}
