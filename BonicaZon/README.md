@@ -1,2 +1,3 @@
 # Bonica-zon
- An "Amazon" type of site using ReactJS.
+ There's Amazon, then there's Bonica's version of Amazon.
+ Using the MERN stack and firebase.
